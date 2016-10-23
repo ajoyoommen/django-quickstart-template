@@ -17,7 +17,7 @@ LOGGING = {
         'file': {
             'level': 'WARNING',
             'class': 'logging.FileHandler',
-            'filename': os.environ['ERROR_LOG_PATH'],  # noqa
+            'filename': os.environ['ERROR_LOG'],  # noqa
             'formatter': 'verbose'
         },
     },
