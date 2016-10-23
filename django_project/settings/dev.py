@@ -1,4 +1,4 @@
-from django.settings.common import *
+from django_project.settings.common import *
 
 
 DEBUG = True

@@ -1,4 +1,4 @@
-from django_settings.common import *
+from django_project.settings.common import *
 
 
 ALLOWED_HOSTS = ['*']
