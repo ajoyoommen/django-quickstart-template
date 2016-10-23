@@ -4,7 +4,7 @@ This repository contains a default structure for new Django projects. The setup
 includes:
 
 * A settings module.
-* Database configured for a Postgres with psycopg2 in requirements.
+* Database configured for PostgreSQL with psycopg2 in requirements.
 * Scripts to source a virtual environment, load constants and start dev server.
 * Error logging configuration for production.
 
@@ -14,12 +14,15 @@ includes:
 2. Install a virtualenv and update `env.sh`.
 3. Rename folder `django_project` to your project's name.
 4. Update your project's name in the following django files:
+
+```
    * manage.py
    * settings/common.py
    * settings/dev.py
    * settings/__init__.py
    * wsgi.py
    * urls.py
+ ```
 
 5. Update `start.sh` to point to your project's dev settings.
 
@@ -29,7 +32,7 @@ Export the following (required) variables in `env.sh`:
 * `SECERT_KEY`
 * `DBNAME`
 * `DBPASS`
-* 'DBUSER'
+* `DBUSER`
 * `STATIC_ROOT`
 * `MEDIA_ROOT`
 * `ERROR_LOG`
